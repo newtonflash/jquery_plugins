@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="DESCRIPTION" content="" />
+    <meta name="KEYWORDS" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="robots" content="index follow"/>
+
+    <link rel="shortcut icon" href="/images/favicon.png" />
+</head>
+
+<body>
+
+<style>
+    body {
+        background-color: lightgray;
+    }
+
+    .goli, .owl-page {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #000;
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover !important;
+        background-color: lightgray;
+        background-position: center;
+        background-repeat: none;
+
+    }
+    .cap{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        border-radius: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border: 2px solid #000;
+        background-size: cover !important;
+        background-color: lightgray;
+        background-position: center;
+        background-repeat: none;
+        background-image:url("images/menu.png");
+    }
+    .goli:nth-of-type(1), .owl-page:nth-of-type(1) {
+        background-image:url("images/linkedin.png");
+        /*  width:60px;
+          height: 60px;*/
+    }
+
+    .goli:nth-of-type(2),.owl-page:nth-of-type(2) {
+        background-image:url("images/twitter.png");
+    }
+
+    .goli:nth-of-type(3), .owl-page:nth-of-type(3) {
+        background-image:url("images/google.png");
+    }
+
+    .goli:nth-of-type(4), .owl-page:nth-of-type(4) {
+        background-image:url("images/facebook.png");
+    }
+
+    .goli:nth-of-type(5), .owl-page:nth-of-type(5) {
+        background-image:url("images/skype.png");
+    }
+
+    .goli:nth-of-type(6), .owl-page:nth-of-type(6) {
+        background-image:url("images/linkedin.png");
+    }
+
+    .goli:nth-of-type(7), .owl-page:nth-of-type(7) {
+        background-image:url("images/facebook.png");
+    }
+
+    .goli:nth-of-type(8), .owl-page:nth-of-type(8) {
+        background-image:url("images/skype.png");
+    }
+
+    .goli:nth-of-type(9), .owl-page:nth-of-type(9) {
+        background-image:url("images/linkedin.png");
+    }
+
+    .owl-pagination {
+        position: relative;
+        padding: 40px;
+        display: inline-block;
+    }
+    .container{
+        width:80%;
+        margin:0 auto;
+    }
+</style>
+
+<div class="container center">
+    <div class="owl-pagination">
+        <a href="#" class="goli"></a>
+        <a href="#" class="goli"></a>
+        <a href="#" class="goli"></a>
+        <a href="#" class=" goli"></a>
+        <a href="#" class="goli"></a>
+        <a href="#" class="goli"></a>
+        <a href="#" class="goli"></a>
+        <a href="#" class="goli"></a>
+    </div>
+</div>
+
+
+
+<footer>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="../src/jQuery.dockingGolies.js"></script>
+
+<script>
+  $(".owl-pagination").dockingGolies({
+        hasCap:false,
+        goliClassName: "goli",
+        goliSelectedClassName : "active",
+        onGoliClick : function(index){
+            console.log(index);
+        }
+    });
+</script>
+</body>
+</html>
